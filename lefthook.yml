@@ -1,0 +1,44 @@
+#   Refer for explanation to following link:
+#   https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
+
+pre-push:
+  parallel: true
+  commands:
+    packages-audit:
+      tags: frontend security
+      run: npm audit
+    test:
+      run: bun test --bail
+    upgradeps:
+      run: bunx upgradeps
+
+pre-commit:
+  parallel: true
+  commands:
+    eslint:
+      glob: '*.{js,jsx,ts,tsx}'
+      run: npx eslint {staged_files} --fix
+    prettier:
+      glob: '*.{js,jsx,ts,tsx,json,yml}'
+      run: npx prettier --write --check {staged_files}
+    markdownlint:
+      tags: documentation style
+      glob: 'doc/*.md'
+      run: npm markdownlint {files}
+
+commit-msg:
+  parallel: true
+  commands:
+    lint-commit-msg:
+      run: npx commitlint --from HEAD~1 --to HEAD --verbose
+    spell-check:
+      run: npx cspell --no-summary {1}
+
+auto-fix:
+  parallel: true
+  commands:
+    frontend:
+      tags: frontend formatting
+      files: git diff --name-only --diff-filter=d $(git merge-base origin/master HEAD)..HEAD
+      glob: '*.{js,jsx,ts,tsx,css,scss,json.yml}'
+      run: 'npm run lint:eslint:fix {files} && npm run prettier --write --list-different {files}'

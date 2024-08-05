@@ -1,0 +1,14 @@
+@use "../abstract/mixins" as *;
+@use "../abstract/functions" as *;
+
+form {
+  @include gap(grid, var(--spacing-base));
+
+  @include mq(mobile) {
+    padding-inline: var(--spacing-2xl);
+  }
+}
+
+.compound-input {
+  @include gap(grid, var(--spacing-sm));
+}

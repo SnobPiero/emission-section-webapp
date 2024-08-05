@@ -1,0 +1,16 @@
+.progressBarContainer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 8px;
+  background-color:  rgba(0, 0, 0, 0.8);
+  text-align: center;
+  line-height: 8px;
+  color: white;
+  border-radius: 25px 0 0 25px;
+  transition: width 0.3s ease;
+}

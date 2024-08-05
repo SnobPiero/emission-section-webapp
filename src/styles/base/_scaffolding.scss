@@ -1,0 +1,73 @@
+@use "../abstract/functions" as *;
+
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+* - The "symbol *" part is to solve Firefox SVG sprite bug
+*/
+*:where(
+    :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
+  ) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: min(var(--width-wrapper));
+  margin-inline: auto;
+  background-color: var(--bg);
+  font-family: var(--typeface);
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+  cursor: pointer;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+a {
+  color: var(--link);
+}
+
+header {
+  margin-top: max(5vh, var(--spacing-lg));
+}
+
+nav {
+  display: flex;
+}
+
+main {
+  margin-top: var(--spacing-2xl);
+}
+
+article > * + * {
+  margin-top: var(--spacing-base);
+}
+
+footer {
+  margin-block: var(--spacing-2xl);
+}
+
+footer p {
+  border-top: 1px solid var(--border);
+  padding-top: var(--spacing-sm);
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}

@@ -1,0 +1,57 @@
+@use "breakpoints" as *;
+@use "sass:math";
+
+/// Convert px to rem values.
+/// 
+/// @example margin-bottom: #{to-rems(16px)};
+///
+/// @param {Number} $px
+/// @return {Number} $rems
+@function to-rems($px) {
+  $rems: math.div($px, 16px) * 1rem;
+  @return $rems;
+}
+
+/// Round decimals
+///
+/// @param {Number} $number
+/// @param {Number} $places - Number of digits after the decimal point
+/// @return {Number}
+///
+@function rnd($number, $places: 0) {
+  $n: 1;
+  @if $places > 0 {
+    @for $i from 1 through $places {
+      $n: $n * 10;
+    }
+  }
+
+  @return math.div(math.round($number * $n), $n);
+}
+
+/// clamped accepts a min and max value and their corresponding breakpoints
+/// creating a fluid typography
+///
+/// @param {Number} $min-value
+/// @param {Number} $max-value
+/// @param {Map} $min-bp
+/// @param {Map} $max-bp
+/// @return {Number}
+///
+@function clamped(
+  $min-value,
+  $max-value,
+  $min-bp: $default-min-bp,
+  $max-bp: $default-max-bp
+) {
+  $slope: math.div($max-value - $min-value, $max-bp - $min-bp);
+  /* In CSS, is necessary to express the slope using proper viewport units, 
+  * which is done by multiplying the slope by 100 to get a percentage
+  */
+  $slope-vw: rnd($slope * 100, 2);
+  $intercept: rnd($min-value - $slope * $min-bp, 2);
+  $min-rnd: rnd($min-value, 2);
+  $max-rnd: rnd($max-value, 2);
+
+  @return clamp(#{$min-rnd}, #{$slope-vw}vw + #{$intercept}, #{$max-rnd});
+}

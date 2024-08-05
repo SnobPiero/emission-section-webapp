@@ -1,0 +1,9 @@
+$breakpoints: (
+  // 500px
+  mobile: 31.25rem,
+  // 1200px
+  desktop: 75rem
+);
+
+$default-min-bp: map-get($breakpoints, "mobile");
+$default-max-bp: map-get($breakpoints, "desktop");

@@ -1,0 +1,41 @@
+.btn {
+  background: var(--primary-500);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 0.4rem;
+}
+
+.btnSmall {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.btnMedium {
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.btnLarge {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.iconLeft,
+.iconRight {
+  display: inline-flex;
+  align-items: center;
+}
+
+.iconLeft {
+  margin-right: 8px;
+}
+
+.iconRight {
+  margin-left: 8px;
+}

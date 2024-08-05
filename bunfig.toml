@@ -1,0 +1,9 @@
+preload = ["./reflect-metadata-import.ts"]
+
+[test]
+# to set different thresholds for lines and functions
+# coverageThreshold = { line = 0.9, function = 0.9 }
+coverage = true
+coverageSkipTestFiles = true
+coverageIgnoreSourcemaps = true
+preload = ["./reflect-metadata-import.ts"]

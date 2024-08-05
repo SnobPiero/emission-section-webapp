@@ -1,0 +1,31 @@
+.selected-language {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.open-icon-menu img:last-child {
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: rotate(180deg);
+}
+
+.close-icon-menu img:last-child {
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform: rotate(0deg);
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  position: absolute;
+  margin-top: 0.25rem;
+}
+
+.hidden {
+  display: none;
+}

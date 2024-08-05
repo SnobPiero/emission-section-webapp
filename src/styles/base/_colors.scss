@@ -1,0 +1,30 @@
+:root {
+  --hue: 251;
+  --sat: 51%;
+  --lum: 48%;
+
+  /* Primary */
+  --primary-100: hsl(var(--hue), var(--sat), calc(var(--lum) + 44.46%));
+  --primary-500: hsl(var(--hue), var(--sat), var(--lum));
+
+  /* Complementary color: hue + 180 */
+  --complementary-500: hsl(calc(var(--hue) + 180), var(--sat), calc(var(--lum) - 37%));
+
+  /* Grayscale */
+  --gray-100: hsl(var(--hue), calc(var(--sat) - 50%), calc(var(--lum) + 3%));
+  --gray-200: hsl(var(--hue), calc(var(--sat) - 50%), calc(var(--lum) - 13%));
+  --gray-300: hsl(var(--hue), calc(var(--sat) - 50%), calc(var(--lum) - 37%));
+  --gray-400: hsl(var(--hue), calc(var(--sat) - 50%), calc(var(--lum) - 61%));
+  --gray-500: hsl(var(--hue), calc(var(--sat) - 50%), calc(var(--lum) - 65%));
+
+  /* Neutral */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Design tokens */
+  --bg: var(--white);
+  --body: var(--gray-400);
+  --title: var(--gray-500);
+  --border: var(--gray-200);
+  --link: var(--gray-400);
+}

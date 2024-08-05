@@ -1,0 +1,5 @@
+/.bundle
+/.vscode
+/src/assets
+*.json
+*.lock

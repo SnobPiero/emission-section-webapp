@@ -1,0 +1,18 @@
+@use "functions" as *;
+
+$spacing-steps: "sm", "base", "lg", "xl", "2xl", "3xl";
+
+:root {
+  --width-wrapper: calc(100% - 16px);
+  --typeface: "DM Sans", sans-serif;
+  --input-border: 2px;
+  --input-radius: 4px;
+  --brand-color: #3e1160;
+
+  /* Spacing custom properties following 8pt grid */
+  @for $i from 1 through length($spacing-steps) {
+    $step: nth($spacing-steps, $i);
+    $point: $i * 8px;
+    --spacing-#{$step}: #{to-rems($point)};
+  }
+}

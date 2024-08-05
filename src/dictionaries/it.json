@@ -1,0 +1,114 @@
+{
+  "server-component": {
+    "welcome": "Benvenuto"
+  },
+  "counter": {
+    "increment": "Incrementa",
+    "decrement": "Decrementa"
+  },
+  "docs": {
+    "description": "Trovate informazioni approfondite sulle caratteristiche e sulle API di Next.js."
+  },
+  "header": {
+    "generate-badge": "Genera badge",
+    "benefits": "Benefici",
+    "tutorial": "Tutorial"
+  },
+  "home": {
+    "sections": {
+      "info": {
+        "title": "Crea badge online\nin modo facile e veloce!",
+        "description": "Genera badge personalizzati per eventi e organizza i tuoi eventi senza sforzo.",
+        "button": "Genera i tuoi badge"
+      },
+      "features": {
+        "csv": {
+          "title": "Caricamento Rapido CSV",
+          "description": "Semplifica il processo di generazione badge importando facilmente un file CSV con di dati dei partecipanti"
+        },
+        "real-time": {
+          "title": "Anteprima in Tempo Reale",
+          "description": "Visualizza istantaneamente l'aspetto del badge durante la personalizzazione, garantendo risultati perfetti."
+        },
+        "templates": {
+          "title": "Modelli Predefiniti Professionali",
+          "description": "Inizia rapidamente con modelli di badge predefiniti, personalizzabili per adattarsi alle tue esigenze"
+        },
+        "updates": {
+          "title": "Aggiornamenti costanti",
+          "description": "Continua a beneficiare di nuove funzionalità e miglioramenti grazie agli aggiornamenti regolari del sistema"
+        },
+        "design": {
+          "title": "No competenze di grafica richieste",
+          "description": "Non sono necessarie competenze di design per creare splendidi badge"
+        },
+        "download": {
+          "title": "Scarica gratuitamente",
+          "description": "Badge Master è stato progettato per creare e scaricare gratuitamente badge"
+        }
+      },
+      "explanation": {
+        "title": "Come utilizzare Badge Master",
+        "steps": {
+          "step1": {
+            "title": "Scegli il template",
+            "description": "Ci sono diversi modelli gratuiti tra cui scegliere per il design del tuo badge personalizzato. Scegli il template che si adatta meglio al tuo evento o personalizzalo completamente secondo le tue esigenze. \nSuggerimento: i testi presenti sui badge sono dei segnaposto. Possono essere cambiati in base al vostro caso d'uso. Scegliete un modello che vi piace e procedete alla modifica dei vostri certificati!"
+          },
+          "step2": {
+            "title": "Aggiungi i partecipanti",
+            "description": "Inserisci il tuo file CSV contenente i dati, e il programma si occuperà automaticamente di popolare il template con tutte le informazioni necessarie. In pochi passaggi, otterrai i tuoi badge personalizzati con i campi desiderati. \nSuggerimento: Per un risultato ottimale, carica il tuo file CSV con i dati assicurandoti che ogni informazione sia collocata accuratamente nelle rispettive colonne, come colonna nome, cognome..."
+          },
+          "step3": {
+            "title": "Inserisci la tua mail",
+            "description": "Hai quasi finito! Ora inserisci la tua mail e riceverai i tuoi badge nel giro di pochi minuti."
+          },
+          "step4": {
+            "title": "Scarica i badge",
+            "description": "Per completare il processo, clicca su 'Scarica Badge'. Riceverai i tuoi badge direttamente nella tua casella di posta elettronica. Grazie per aver utilizzato il nostro servizio!"
+          }
+        }
+      },
+      "badgeTemplate": {
+        "title": "Crea i tuoi badge",
+        "steps": {
+          "step1": {
+            "number":"1",
+            "title": "Scegli il template"
+          },
+          "step2": {
+            "number":"2",
+            "title": "Aggiungi i partecipanti"
+          },
+          "step3": {
+            "number":"3",
+            "title": "Scarica "
+          }
+        },
+        "page":"Pagina",
+        "chooseTemplate":"Scegli template",
+        "addParticipants":"Aggiungi i partecipanti",
+        "addParticipantsManually":"Aggiungi i partecipanti manualmente oppure",
+        "uploadCSVHere":"carica il file CSV qui",
+        "continue":"Continua",
+        "addNameParticipants":"Aggiungi il nome dei partecipanti (1/400)",
+        "participantName":"Nome partecipante",
+        "add":"Aggiungi",
+        "minCharactersError":"Il nome del partecipante deve contenere almeno 5 caratteri",
+        "generatingYourBadge":"Stiamo generando i tuoi badge",
+        "mailInstruction": "Dopo aver inserito la mail riceverai un file ZIP con tutti i badge creati.\n Ricordati di controllare la cartella spam!",
+        "email":"Email",
+        "addMail":"Add your email",
+        "send":"Invia"
+      }
+    }
+  },
+  "footer": {
+    "title": "We collaborate with ambitious brands and people.\nLet’s build something great together.",
+    "startConversation": "Start a conversation",
+    "portfolioProjects": "Projects",
+    "quickLinks": "Quick links",
+    "contact": "Contact",
+    "terms": "Terms",
+    "faq": "FAQ"
+  }
+}

@@ -1,0 +1,24 @@
+{
+	"version": "0.2",
+	"language": "en,it",
+	"words": [
+		"bunx",
+		"callout",
+		"commitlint",
+		"Devs",
+		"formatjs",
+		"Jsonable",
+		"lefthook",
+		"localematcher",
+		"markdownlint",
+		"nextjs",
+		"scss",
+		"trivago",
+		"tsyringe",
+		"upgradeps",
+		"uuidv"
+	],
+	"flagWords": [
+		"hte"
+	]
+}

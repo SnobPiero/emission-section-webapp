@@ -1,0 +1,25 @@
+@use 'variables' as *;
+@use 'breakpoints' as *;
+
+@mixin gap($display, $gap) {
+  display: $display;
+  grid-gap: $gap;
+}
+
+@mixin flexProps($align: flex-start, $justify: flex-start, $direction: row) {
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+
+@mixin mq($size) {
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+@mixin mq-down($size) {
+  @media (max-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}

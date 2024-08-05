@@ -1,0 +1,51 @@
+:is(h1, h2, h3, h4) {
+  line-height: var(--line-height-headings);
+  color: var(--title);
+}
+
+// if h2/h3 is not the first child of the page:
+:is(h2, h3, h4):not(:first-child) {
+  margin-top: var(--spacing-lg);
+}
+
+h1 {
+  font-size: var(--font-size-xxxl);
+  font-weight: var(--font-weight-900);
+}
+
+h2 {
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-600);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-500);
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-500);
+}
+
+h5 {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-500);
+}
+
+h6 {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-700);
+}
+
+p {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-body);
+  font-weight: var(--font-weight-400);
+  color: var(--body);
+}
+
+b, strong {
+  color: var(--complementary-500);
+  font-weight: var(--font-weight-600);
+}

@@ -1,0 +1,27 @@
+@use "functions" as *;
+@use "sass:math";
+
+$type-base: 1rem;
+$type-scale: 1.25;
+$type-steps: "sm", "base", "md", "lg", "xl", "xxl", "xxxl";
+$weight-steps: "400", "500", "600", "700", "800", "900";
+$type-base-index: index($type-steps, "base");
+
+:root {
+  --line-height-headings: 1.2;
+  --line-height-body: 1.5;
+
+  /* Typography typescale custom properties definition */
+  @for $i from 1 through length($type-steps) {
+    $step: nth($type-steps, $i);
+    $min: $type-base * math.pow($type-scale, $i - $type-base-index);
+    $max: $type-base * math.pow($type-scale, $i - $type-base-index + 1);
+    --font-size-#{$step}: #{clamped($min, $max)};
+  }
+
+  /* Typography font-weight custom properties definition */
+  @for $i from 1 through length($weight-steps) {
+    $step: nth($weight-steps, $i);
+    --font-weight-#{$step}: #{$step};
+  }
+}

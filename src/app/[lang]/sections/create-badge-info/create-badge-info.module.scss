@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  text-align: center;
+
+  .title {
+    white-space: pre-line;
+    font-size: 48px;
+    font-weight: 700;
+    color:var(--primary-500);
+  }
+
+  .description {
+    white-space: pre-line;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 32px;
+  }
+}
