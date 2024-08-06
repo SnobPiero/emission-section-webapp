@@ -23,6 +23,7 @@
     ],
     "paths": {
       "@di/*": ["src/di/*"],
+      "@fake-data/*": ["src/fake-data/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@modules/*" : ["./src/modules/*"],
       "@app/*" : ["./src/app/*"],

@@ -1,0 +1,46 @@
+.title {
+  text-align: start;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.mainInfoDescription {
+  strong {
+    font-size: 16px;
+    color: #12b76a;
+  }
+}
+
+.zoneCardListContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 489px) {
+  .zoneCardListContainer {
+    flex-direction: column;
+  }
+}
+
+@media (489px < width <= 760px) {
+  .zoneCardListContainer {
+    flex-direction: row;
+    > div {
+      flex: calc(50% - 1rem);
+    }
+  }
+}
+
+@media (760px < width <= 1002px) {
+  .zoneCardListContainer {
+    flex-direction: row;
+    > div {
+      flex: calc(33.33% - 1rem);
+      &:last-child {
+        flex-grow: 0;
+      }
+    }
+  }
+}
