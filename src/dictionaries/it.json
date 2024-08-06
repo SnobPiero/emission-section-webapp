@@ -16,6 +16,29 @@
   },
   "home": {
     "sections": {
+      "emissions": {
+        "title": "Emissioni",
+        "class": "Classe",
+        "emissionDescription": "Emissioni di CO2 (g/km) del veicolo:",
+        "steps": {
+          "step1": {
+            "title": "Scegli il template",
+            "description": "Ci sono diversi modelli gratuiti tra cui scegliere per il design del tuo badge personalizzato. Scegli il template che si adatta meglio al tuo evento o personalizzalo completamente secondo le tue esigenze. \nSuggerimento: i testi presenti sui badge sono dei segnaposto. Possono essere cambiati in base al vostro caso d'uso. Scegliete un modello che vi piace e procedete alla modifica dei vostri certificati!"
+          },
+          "step2": {
+            "title": "Aggiungi i partecipanti",
+            "description": "Inserisci il tuo file CSV contenente i dati, e il programma si occuperà automaticamente di popolare il template con tutte le informazioni necessarie. In pochi passaggi, otterrai i tuoi badge personalizzati con i campi desiderati. \nSuggerimento: Per un risultato ottimale, carica il tuo file CSV con i dati assicurandoti che ogni informazione sia collocata accuratamente nelle rispettive colonne, come colonna nome, cognome..."
+          },
+          "step3": {
+            "title": "Inserisci la tua mail",
+            "description": "Hai quasi finito! Ora inserisci la tua mail e riceverai i tuoi badge nel giro di pochi minuti."
+          },
+          "step4": {
+            "title": "Scarica i badge",
+            "description": "Per completare il processo, clicca su 'Scarica Badge'. Riceverai i tuoi badge direttamente nella tua casella di posta elettronica. Grazie per aver utilizzato il nostro servizio!"
+          }
+        }
+      },
       "info": {
         "title": "Crea badge online\nin modo facile e veloce!",
         "description": "Genera badge personalizzati per eventi e organizza i tuoi eventi senza sforzo.",

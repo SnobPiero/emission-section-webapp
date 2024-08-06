@@ -1,16 +1,20 @@
 import "reflect-metadata";
 
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
 
 import { i18n, type Locale } from "@intl/i18n-config";
 
 import "./globals.scss";
 
-const dm = DM_Sans({ subsets: ["latin"] });
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export async function generateStaticParams() {
-  return i18n.locales.map((locale) => ({ lang: locale }));
+  return i18n.locales.map((locale) => ({
+    lang: locale,
+    variable: "--font-work-sans",
+  }));
 }
 
 export default function RootLayout({
@@ -21,7 +25,7 @@ export default function RootLayout({
   params: { lang: Locale };
 }) {
   return (
-    <html lang={params.lang}>
+    <html className={inter.className} lang={params.lang}>
       <body>{children}</body>
     </html>
   );

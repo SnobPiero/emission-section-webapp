@@ -1,0 +1,47 @@
+.titleContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+  h3 {
+    text-align: start;
+    color: var(--primary-500);
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--font-work-sans);
+  }
+}
+
+.mainInfoDescription {
+  strong {
+    font-size: 20px;
+    color: #12b76a;
+  }
+}
+
+.emissionsOptionsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  > li {
+    flex-basis: 1;
+    text-align: center;
+    font-size: 14px;
+    padding: 0.25rem 0 0.25rem 0;
+    line-height: 1.5715;
+    border-radius: 0.5rem;
+    background-color: #f3f4f6;
+  }
+
+  .emissionsOptionSelected {
+    background-color: #3ac383;
+  }
+}
+
+@media (max-width: 768px) {
+  .emissionsOptionsList {
+    > li {
+      flex-basis: 25%;
+      flex-grow: 1;
+    }
+  }
+}
