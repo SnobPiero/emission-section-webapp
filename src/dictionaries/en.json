@@ -2,121 +2,16 @@
   "server-component": {
     "welcome": "Welcome"
   },
-  "counter": {
-    "increment": "Increment",
-    "decrement": "Decrement"
-  },
-  "docs": {
-    "description": "Find in-depth information about Next.js features and API."
-  },
-  "header": {
-    "generate-badge": "Generate badge",
-    "benefits": "Benefits",
-    "tutorial": "Tutorial"
-  },
   "home": {
     "sections": {
       "emissions": {
-        "title": "Emissioni",
-        "class": "Classe",
-        "emissionDescription": "Emissioni di CO2 (g/km) del veicolo:",
-        "zonesTitle": "Zone a bassa emissione",
-        "zonesDescription": "In base alle normative vigenti nelle principali città verifichiamo se il veicolo ha delle limitazioni alla circolazione.",
-        "zonesDisclaimer": "*Dati rielaborati da fonti ufficiali, verifica sempre possibili aggiornamenti normativi"
-      },
-      "info": {
-        "title": "Create badges online\nquickly and easily!",
-        "description": "Generate custom badges for events and organize your events effortlessly.",
-        "button": "Generate your badges"
-      },
-      "features": {
-        "csv": {
-          "title": "Caricamento Rapido CSV",
-          "description": "Semplifica il processo di generazione badge importando facilmente un file CSV con di dati dei partecipanti"
-        },
-        "real-time": {
-          "title": "Anteprima in Tempo Reale",
-          "description": "Visualizza istantaneamente l'aspetto del badge durante la personalizzazione, garantendo risultati perfetti."
-        },
-        "templates": {
-          "title": "Modelli Predefiniti Professionali",
-          "description": "Inizia rapidamente con modelli di badge predefiniti, personalizzabili per adattarsi alle tue esigenze"
-        },
-        "updates": {
-          "title": "Aggiornamenti costanti",
-          "description": "Continua a beneficiare di nuove funzionalità e miglioramenti grazie agli aggiornamenti regolari del sistema"
-        },
-        "design": {
-          "title": "No competenze di grafica richieste",
-          "description": "Non sono necessarie competenze di design per creare splendidi badge"
-        },
-        "download": {
-          "title": "Scarica gratuitamente",
-          "description": "Badge Master è stato progettato per creare e scaricare gratuitamente badge"
-        }
-      },
-      "explanation": {
-        "title": "How to use Badge Master",
-        "steps": {
-          "step1": {
-            "title": "Choose the template",
-            "description": "There are several free templates to choose from for designing your custom badge. Choose the template that best suits your event or customize it completely to fit your needs. \nTip: The texts on the badges are placeholders. They can be changed according to your use case. Choose a template you like and proceed to customize your certificates!"
-          },
-          "step2": {
-            "title": "Add participants",
-            "description": "Insert your CSV file containing the data, and the program will automatically populate the template with all the necessary information. In a few steps, you will get your personalized badges with the desired fields. \nTip: For optimal results, upload your CSV file with the data ensuring that each piece of information is accurately placed in their respective columns, such as name column, surname..."
-          },
-          "step3": {
-            "title": "Enter your email",
-            "description": "You're almost done! Now enter your email and you will receive your badges within minutes."
-          },
-          "step4": {
-            "title": "Download the badges",
-            "description": "To complete the process, click on 'Download Badge'. You will receive your badges directly in your email inbox. Thank you for using our service!"
-          }
-        }
-      },
-      "badgeTemplate": {
-        "title": "Create your own badges",
-        "steps": {
-          "step1": {
-            "number":"1",
-            "title": "Choose the template"
-          },
-          "step2": {
-            "number":"2",
-            "title": "Add participants"
-          },
-          "step3": {
-            "number":"3",
-            "title": "Download"
-          }
-        },
-        "page":"Page",
-        "chooseTemplate":"Choose template",
-        "addParticipants":"Add participants",
-        "addParticipantsManually":"Add participants manually or",
-        "uploadCSVHere":"upload your CSV file here",
-        "continue":"Continue",
-        "addNameParticipants":"Add participants name (1/400)",
-        "participantName":"Participant name",
-        "add":"Add",
-        "minCharactersError":"Participant name must be at least 5 characters long.",
-        "generatingYourBadge":"We are generating your badges",
-        "mailInstruction": "After entering your email, you will receive a ZIP file containing all the badges created.\n Remember to check your spam folder!",
-        "email": "Email",
-        "addMail": "Enter email",
-        "send": "Send"
+        "title": "Emissions",
+        "class": "Class",
+        "emissionDescription": "CO2 emissions (g/km) of the vehicle:",
+        "zonesTitle": "Low emission zones",
+        "zonesDescription": "Based on current regulations in major cities, we check if the vehicle has any traffic restrictions.",
+        "zonesDisclaimer": "*Data reprocessed from official sources, always check for possible regulatory updates"
       }
     }
-  },
-  "footer": {
-    "title": " We collaborate with ambitious brands and people.\nLet’s build something great together.",
-    "startConversation": "Start a conversation",
-    "portfolioProjects": "Projects",
-    "quickLinks": "Quick links",
-    "contact": "Contact",
-    "terms": "Terms",
-    "faq": "FAQ"
   }
 }
