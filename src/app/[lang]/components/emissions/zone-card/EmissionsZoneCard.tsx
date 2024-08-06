@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { Key, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,7 +9,7 @@ import warningImg from "@assets/warning.svg";
 import dangerImg from "@assets/danger.svg";
 import accordion from "@assets/accordion.svg";
 
-import Disclaimer from "../disclaimer/Disclaimer.";
+import Disclaimer from "../disclaimer/Disclaimer";
 
 import styles from "./emissions-zone-card.module.scss";
 
@@ -66,8 +66,46 @@ const ZoneCard: React.FC<ZoneCardProps> = ({ zone }) => {
         </ul>
       </div>
       {open && (
-        <div className={styles.messagesContainer}>
+        <div className={styles.messagesListContainer}>
           <hr />
+          {zones.map(
+            (
+              { zone: zoneName, result, message, prohibition_entry },
+              listIndex
+            ) => (
+              <div
+                key={zoneName}
+                className={`${styles.messageContainer} ${listIndex % 2 !== 0 ? styles.odd : ""}`}
+              >
+                {result === "done" && (
+                  <Image width={12} src={doneImg} alt="done" />
+                )}
+                {result === "warning" && (
+                  <Image width={12} src={warningImg} alt="warning" />
+                )}
+                {result === "danger" && (
+                  <Image width={12} src={dangerImg} alt="danger" />
+                )}
+                <div>
+                  {zoneName && (
+                    <span>
+                      <strong>Zona:</strong> {zoneName}
+                    </span>
+                  )}
+                  {prohibition_entry && (
+                    <span>
+                      <strong>Divieto:</strong> {prohibition_entry}
+                    </span>
+                  )}
+                  {message && (
+                    <span>
+                      <strong>Note:</strong> {message}
+                    </span>
+                  )}
+                </div>
+              </div>
+            )
+          )}
           <Disclaimer city={city} />
         </div>
       )}
