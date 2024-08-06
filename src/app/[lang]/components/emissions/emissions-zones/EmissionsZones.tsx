@@ -24,6 +24,9 @@ export default function EmissionsZones({
           <ZoneCard key={zone.city} zone={zone} />
         ))}
       </div>
+      <span className={styles.zonesDisclaimer}>
+        {dictionary.zonesDisclaimer}
+      </span>
     </>
   );
 }

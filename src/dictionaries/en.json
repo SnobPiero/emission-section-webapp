@@ -21,7 +21,8 @@
         "class": "Classe",
         "emissionDescription": "Emissioni di CO2 (g/km) del veicolo:",
         "zonesTitle": "Zone a bassa emissione",
-        "zonesDescription": "In base alle normative vigenti nelle principali città verifichiamo se il veicolo ha delle limitazioni alla circolazione."
+        "zonesDescription": "In base alle normative vigenti nelle principali città verifichiamo se il veicolo ha delle limitazioni alla circolazione.",
+        "zonesDisclaimer": "*Dati rielaborati da fonti ufficiali, verifica sempre possibili aggiornamenti normativi"
       },
       "info": {
         "title": "Create badges online\nquickly and easily!",
