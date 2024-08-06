@@ -37,9 +37,9 @@ const Button: React.FC<ButtonProps> = ({
       className={`${styles.btn} ${sizeClass} ${className}`}
       onClick={onClick}
     >
-      {iconLeft && <span className={styles.iconLeft}>{iconLeft}</span>}
+      {iconLeft && iconLeft}
       {children}
-      {iconRight && <span className={styles.iconRight}>{iconRight}</span>}
+      {iconRight && iconRight}
     </button>
   );
 };

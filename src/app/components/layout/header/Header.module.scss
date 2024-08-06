@@ -64,13 +64,6 @@
   align-items: center;
   gap: 1rem;
 }
-.localeSwitcher {
-  display: flex;
-  align-items: center;
-}
-.mobileNavigation {
-  display: none;
-}
 
 .container {
   position: sticky;
@@ -80,12 +73,8 @@
   background-color: var(--bg);
 }
 
-@media (max-width: 90rem) {
-  .rightNav,
-  .navigation {
-    display: none;
-  }
-  .mobileNavigation {
-    display: block;
+@media (max-width: 767px) {
+  .header {
+    padding-inline: 10px;
   }
 }

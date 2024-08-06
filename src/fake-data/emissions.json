@@ -23,7 +23,7 @@
         {
           "zone": "Fascia verde",
           "result": "warning",
-          "message": "Il divieto è ristretto a veicoli con transito durante la fascia oraria 7.30-20.30. \\nAccertati che valga per questo veicolo",
+          "message": "Il divieto è ristretto a veicoli con transito durante la fascia oraria 7.30-20.30. \nAccertati che valga per questo veicolo",
           "prohibition_entry": "autovetture alimentate a diesel Euro 4 nella fascia oraria 7.30-20.30"
         }
       ]
@@ -34,8 +34,8 @@
         {
           "zone": "Città",
           "result": "warning",
-          "message": "Il divieto è ristretto a veicoli con transito nei giorni feriali dal lunedì al venerdì con orario 8 - 19. \\nAccertati che valga per questo veicolo",
-          "prohibition_entry": "Persone (M1, M2, M3) e\\nDiesel Euro 3 e 4\\nnei giorni feriali dal lunedì al venerdì con orario 8 - 19"
+          "message": "Il divieto è ristretto a veicoli con transito nei giorni feriali dal lunedì al venerdì con orario 8 - 19        . \nAccertati che valga per questo veicolo",
+          "prohibition_entry": "Persone (M1, M2, M3) e\nDiesel Euro 3 e 4        \nnei giorni feriali dal lunedì al venerdì con orario 8 - 19        "
         }
       ]
     },
